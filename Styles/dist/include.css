@@ -1,0 +1,193 @@
+/* @mixin font-size($size, $lineheight: $default-line-height) {
+    font-size: $size;
+    font-size: calculateRem($size);
+    line-height: $lineheight + px; //fallback for old browsers
+    line-height: (0.125 * $lineheight) + rem; */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana;
+  font-size: 16px;
+  background-color: #fff;
+  color: #999; }
+
+html {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+embed,
+img,
+object,
+video {
+  max-width: 100%;
+  height: auto; }
+
+a {
+  text-decoration: none;
+  color: orange;
+  -webkit-transition: color 0.2s ease;
+  -moz-transition: color 0.2s ease;
+  -ms-transition: color 0.2s ease;
+  -o-transition: color 0.2s ease;
+  transition: color 0.2s ease; }
+  a:hover, a:focus {
+    color: lime;
+    text-decoration: underline; }
+
+p {
+  margin: 0; }
+
+header,
+main,
+footer {
+  margin: 1.25em 0; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  color: #333; }
+
+.h1 {
+  font-size: 24px;
+  line-height: 33.6px;
+  font-size: 1.5rem;
+  line-height: 2.1rem; }
+  @media screen and (min-width: 48em) {
+    .h1 {
+      font-size: 32px;
+      line-height: 44.8px;
+      font-size: 2rem;
+      line-height: 2.8rem; } }
+  @media screen and (min-width: 62em) {
+    .h1 {
+      font-size: 40px;
+      line-height: 56px;
+      font-size: 2.5rem;
+      line-height: 3.5rem; } }
+  @media screen and (min-width: 75em) {
+    .h1 {
+      font-size: 48px;
+      line-height: 67.2px;
+      font-size: 3rem;
+      line-height: 4.2rem; } }
+
+.h2 {
+  font-size: 20px;
+  line-height: 28px;
+  font-size: 1.25rem;
+  line-height: 1.75rem; }
+  @media screen and (min-width: 48em) {
+    .h2 {
+      font-size: 28px;
+      line-height: 39.2px;
+      font-size: 1.75rem;
+      line-height: 2.45rem; } }
+  @media screen and (min-width: 62em) {
+    .h2 {
+      font-size: 36px;
+      line-height: 50.4px;
+      font-size: 2.25rem;
+      line-height: 3.15rem; } }
+  @media screen and (min-width: 75em) {
+    .h2 {
+      font-size: 44px;
+      line-height: 61.6px;
+      font-size: 2.75rem;
+      line-height: 3.85rem; } }
+
+.h3 {
+  font-size: 18px;
+  line-height: 25.2px;
+  font-size: 1.125rem;
+  line-height: 1.575rem; }
+  @media screen and (min-width: 48em) {
+    .h3 {
+      font-size: 26px;
+      line-height: 36.4px;
+      font-size: 1.625rem;
+      line-height: 2.275rem; } }
+  @media screen and (min-width: 62em) {
+    .h3 {
+      font-size: 34px;
+      line-height: 47.6px;
+      font-size: 2.125rem;
+      line-height: 2.975rem; } }
+  @media screen and (min-width: 75em) {
+    .h3 {
+      font-size: 40px;
+      line-height: 56px;
+      font-size: 2.5rem;
+      line-height: 3.5rem; } }
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 1em;
+  padding-right: 1em; }
+  .container:before, .container:after {
+    content: " ";
+    display: table; }
+  .container:after {
+    clear: both; }
+  @media (min-width: 48em) {
+    .container {
+      width: 100%; } }
+  @media (min-width: 62em) {
+    .container {
+      width: 60.75em; } }
+  @media (min-width: 75em) {
+    .container {
+      width: 73.25em; } }
+
+.row {
+  margin-left: -1em;
+  margin-right: -1em; }
+  .row:before, .row:after {
+    content: " ";
+    display: table; }
+  .row:after {
+    clear: both; }
+  .row.relative {
+    position: relative; }
+
+.col-sm-12 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 1em;
+  padding-right: 1em; }
+  @media (min-width: 48em) {
+    .col-sm-12 {
+      float: left;
+      width: 100%; } }
+
+.col-sm-6 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 1em;
+  padding-right: 1em; }
+  @media (min-width: 48em) {
+    .col-sm-6 {
+      float: left;
+      width: 50%; } }
+
+.col-sm-4 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 1em;
+  padding-right: 1em; }
+  @media (min-width: 48em) {
+    .col-sm-4 {
+      float: left;
+      width: 33.33333%; } }
+
+@media (min-width: 48em) {
+  .col-sm-offset-3 {
+    margin-left: 25%; } }

@@ -1,0 +1,39 @@
+
+.container {
+    @include container-fixed();
+    @media (min-width: $screen-sm-min) {
+		width: 100%;
+	}
+
+	@media (min-width: $screen-md-min) {
+		width: $container-md;
+	}
+
+	@media (min-width: $screen-lg-min) {
+		width: $container-lg;
+	}
+}
+
+.row {
+    @include make-row();
+    &.relative {
+    	position: relative;
+    }
+}
+
+.col-sm-12 {
+    @include make-sm-column(12);
+}
+
+.col-sm-6 {
+    @include make-sm-column(6);
+}
+
+.col-sm-4 {
+    @include make-sm-column(4);
+}
+
+//pulls
+.col-sm-offset-3 {
+	@include make-sm-column-offset(3);
+}
